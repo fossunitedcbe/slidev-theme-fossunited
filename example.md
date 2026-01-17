@@ -1,10 +1,20 @@
 ---
 theme: ./
+background: https://source.unsplash.com/collection/94734566/1920x1080
+font:
+  sans: "Inter"
+  mono: "Fira Code"
 ---
 
-# Slidev Theme Starter
+# FOSS United Theme
 
-Presentation slides for developers
+Growing India's FOSS Ecosystem
+
+<EventMeta 
+  event="FOSS United Meetup" 
+  city="Coimbatore" 
+  date="January 2026" 
+/>
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" flex="~ justify-center items-center gap-2" hover="bg-white bg-opacity-10">
@@ -14,67 +24,103 @@ Presentation slides for developers
 
 ---
 
-# What is Slidev?
+# About FOSS United
 
-Slidev is a slide maker and presentation tool designed for developers. It includes the following features:
+A non-profit foundation that promotes Free and Open Source Software (FOSS) in India.
 
-- 📝 **Text-based** - focus on your content with Markdown, then style it later
-- 🎨 **Themable** - themes can be shared and reused as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
-
-<br>
-<br>
-
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+- **Community Driven**: Built by the community, for the community.
+- **Grant Programs**: Monthly grants for FOSS projects.
+- **Events**: FOSS Conferences (IndiaFOSS) and local meetups.
 
 ---
 
-# Navigation
+## layout: section
 
-Hover on the bottom-left corner to see the navigation's controls panel
+# Layout Patterns
 
-## Keyboard Shortcuts
-
-|     |     |
-| --- | --- |
-| <kbd>space</kbd> / <kbd>tab</kbd> / <kbd>right</kbd> | next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
-| <kbd>down</kbd> | next slide |
+Demonstrating the available slide layouts
 
 ---
-layout: image-right
-image: https://cover.sli.dev
+
+## layout: quote
+
+> "Free software is a matter of liberty, not price. To understand the concept, you should think of 'free' as in 'free speech', not as in 'free beer'."
+
+-- Richard Stallman
+
 ---
 
-# Code
+## layout: code
 
-Use code snippets and get the highlighting directly!
+# Code-Heavy Layout
 
-```ts
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
+Maximized space for technical demonstrations
 
-function updateUser(id: number, update: Partial<User>) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
+```ts {all|2|4-6|8}
+// Reusable Speaker Component
+import Speaker from "./components/Speaker.vue";
+
+export default {
+  name: "FOSS United Theme",
+};
+
+console.log("Open Source is the future!");
 ```
 
+<Callout type="tip">
+Use the `code` layout when you need more vertical space for snippets.
+</Callout>
+
 ---
+
+## layout: agenda
+
+# Meetup Agenda
+
+- **10:00 AM**: Intro to FOSS
+- **10:30 AM**: Lightning Talks
+- **11:30 AM**: Networking & Chai
+- **12:00 PM**: Main Session
+
+::right::
+
+### Speaker Segment
+
+Exciting talks from community members!
+
+---
+
+# Reusable Components
+
+<Callout type="note">
+Themes can include built-in Vue components to keep your markdown clean.
+</Callout>
+
+<Callout type="warning">
+Always verify your live demos before the talk!
+</Callout>
+
+---
+
+# Speaker Introduction
+
+<Speaker 
+  name="Santhosh" 
+  role="Community Member" 
+  twitter="FOSSUnited" 
+  github="fossunited"
+  website="https://fossunited.org"
+/>
+
+---
+
 layout: center
-class: "text-center"
+class: text-center
+
 ---
 
-# Learn More
+# Thank You!
 
-[Documentation](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+Join the community at [fossunited.org](https://fossunited.org)
+
+[Discord](https://fossunited.org/discord) / [Forum](https://forum.fossunited.org)

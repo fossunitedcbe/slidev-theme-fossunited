@@ -1,24 +1,94 @@
-:root {
-  /* default theme color */
-  /* can be overrided by uses `themeConfig` option */
-  --slidev-theme-primary: #5d8392;
+@import 'vars.css';
+
+html {
+  font-family: var(--slidev-theme-font-sans);
+  background-color: var(--slidev-theme-bg);
+  color: var(--slidev-theme-text);
 }
 
-.slidev-layout.cover,
-.slidev-layout.intro {
-  @apply h-full grid;
+pre, code {
+  font-family: var(--slidev-theme-font-mono);
+}
 
-  h1 {
-    @apply text-6xl leading-20;
-  }
+.slidev-layout {
+  @apply h-full w-full p-10;
+  background-color: var(--slidev-theme-bg);
+  color: var(--slidev-theme-text);
+}
 
-  h1 + p {
-    @apply -mt-2 opacity-50 mb-4;
-  }
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+  color: var(--slidev-theme-text);
+}
 
-  p + h2,
-  ul + h2,
-  table + h2 {
-    @apply mt-10;
-  }
+h1 {
+  @apply text-5xl mb-6;
+}
+
+h2 {
+  @apply text-3xl mb-4;
+}
+
+p, li {
+  @apply leading-relaxed;
+}
+
+strong {
+  color: var(--slidev-theme-primary);
+}
+
+a {
+  color: var(--slidev-theme-primary);
+  @apply underline decoration-2 underline-offset-4 transition-colors;
+}
+
+a:hover {
+  @apply text-green-700;
+}
+
+/* Layout Specifics */
+.slidev-layout.cover {
+  @apply flex flex-col justify-center items-start text-left;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.slidev-layout.cover::after {
+  content: "";
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(circle, rgba(8, 181, 77, 0.1) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.slidev-layout.cover h1 {
+  @apply text-7xl font-extrabold tracking-tight mb-4 relative z-10;
+  background: linear-gradient(to right, #1a1a1a 40%, #08B54D);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.slidev-layout.section {
+  @apply flex flex-col justify-center items-center text-center bg-green-50;
+}
+
+.slidev-layout.section h1 {
+  @apply text-6xl text-green-700;
+}
+
+.slidev-layout.quote {
+  @apply flex flex-col justify-center italic;
+}
+
+.slidev-layout.quote blockquote {
+  @apply text-4xl leading-tight border-l-8 border-green-500 pl-8 py-4;
+}
+
+.slidev-layout.agenda {
+  @apply grid grid-cols-[1fr_2fr] gap-10;
 }
