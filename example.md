@@ -1,9 +1,16 @@
 ---
 theme: ./
-background: https://source.unsplash.com/collection/94734566/1920x1080
-font:
-  sans: "Inter"
-  mono: "Fira Code"
+highlighter: shiki
+lineNumbers: true
+info: |
+  ## FOSS United Slidev Theme
+  A professional theme for community presentations.
+drawings:
+  persist: false
+transition: slide-left
+title: FOSS United Theme
+layout: cover
+background: https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=2070
 ---
 
 # FOSS United Theme
@@ -23,34 +30,36 @@ Growing India's FOSS Ecosystem
 </div>
 
 ---
+layout: default
+---
 
 # About FOSS United
 
-A non-profit foundation that promotes Free and Open Source Software (FOSS) in India.
+FOSS United is a non-profit foundation that aims at promoting & strengthening the Free and Open Source Software (FOSS) ecosystem in India.
 
 - **Community Driven**: Built by the community, for the community.
 - **Grant Programs**: Monthly grants for FOSS projects.
 - **Events**: FOSS Conferences (IndiaFOSS) and local meetups.
 
 ---
-
-## layout: section
+layout: section
+---
 
 # Layout Patterns
 
 Demonstrating the available slide layouts
 
 ---
-
-## layout: quote
+layout: quote
+---
 
 > "Free software is a matter of liberty, not price. To understand the concept, you should think of 'free' as in 'free speech', not as in 'free beer'."
 
--- Richard Stallman
+<p class="attribution">Richard Stallman</p>
 
 ---
-
-## layout: code
+layout: code
+---
 
 # Code-Heavy Layout
 
@@ -72,15 +81,15 @@ Use the `code` layout when you need more vertical space for snippets.
 </Callout>
 
 ---
-
-## layout: agenda
+layout: agenda
+---
 
 # Meetup Agenda
 
-- **10:00 AM**: Intro to FOSS
-- **10:30 AM**: Lightning Talks
-- **11:30 AM**: Networking & Chai
-- **12:00 PM**: Main Session
+- **10:00 AM - 10:30 AM**: Intro to FOSS
+- **10:30 AM - 11:00 AM**: Lightning Talks
+- **11:00 AM - 11:30 AM**: Round Table Discussion
+- **11:30 AM - 12:00 PM**: Networking & Chai
 
 ::right::
 
@@ -88,6 +97,12 @@ Use the `code` layout when you need more vertical space for snippets.
 
 Exciting talks from community members!
 
+1. [Name] - [Talk Title]
+2. [Name] - [Talk Title]
+3. [Name] - [Talk Title]
+
+---
+layout: default
 ---
 
 # Reusable Components
@@ -101,6 +116,8 @@ Always verify your live demos before the talk!
 </Callout>
 
 ---
+layout: default
+---
 
 # Speaker Introduction
 
@@ -113,10 +130,21 @@ Always verify your live demos before the talk!
 />
 
 ---
+layout: two-cols
+---
 
+## Left Column
+- 2 column layout
+
+::right::
+
+## Right Column
+<br/>
+<img src="https://raw.githubusercontent.com/fossunited/Branding/refs/heads/main/asset/FOSS%20United%20Logo/FOSS%20United%20Logo%20White.png" class="border-8 border-green-500 bg-black" />
+
+---
 layout: center
 class: text-center
-
 ---
 
 # Thank You!

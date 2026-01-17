@@ -1,9 +1,9 @@
 <template>
   <div class="slidev-layout two-cols">
-    <div>
+    <div class="col-left">
       <slot />
     </div>
-    <div>
+    <div class="col-right">
       <slot name="right" />
     </div>
   </div>
