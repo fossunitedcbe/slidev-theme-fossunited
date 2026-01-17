@@ -120,7 +120,6 @@ a:hover {
   @apply absolute -top-8 -left-4 text-8xl font-serif text-primary opacity-10 pointer-events-none select-none;
 }
 
-.slidev-layout.agenda,
 .slidev-layout.two-cols {
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;

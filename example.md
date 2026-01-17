@@ -81,15 +81,15 @@ Use the `code` layout when you need more vertical space for snippets.
 </Callout>
 
 ---
-layout: agenda
+layout: two-cols
 ---
 
 # Meetup Agenda
 
 - **10:00 AM - 10:30 AM**: Intro to FOSS
-- **10:30 AM - 11:00 AM**: Lightning Talks
-- **11:00 AM - 11:30 AM**: Round Table Discussion
-- **11:30 AM - 12:00 PM**: Networking & Chai
+- **10:30 AM - 11:30 AM**: Talks
+- **11:30 AM - 12:30 PM**: Round Table Discussion
+- **12:30 PM - 1:00 PM**: Networking & Chai
 
 ::right::
 
@@ -119,10 +119,10 @@ Always verify your live demos before the talk!
 layout: default
 ---
 
-# Speaker Introduction
+# whoami
 
 <Speaker 
-  name="Santhosh" 
+  name="Name" 
   role="Community Member" 
   twitter="FOSSUnited" 
   github="fossunited"
@@ -149,6 +149,6 @@ class: text-center
 
 # Thank You!
 
-Join the community at [fossunited.org](https://fossunited.org)
+Join the community at [fossunited.org](https://fossunited.org) 
 
-[Discord](https://fossunited.org/discord) / [Forum](https://forum.fossunited.org)
+[Forum](https://forum.fossunited.org)
