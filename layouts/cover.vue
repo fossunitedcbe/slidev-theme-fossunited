@@ -18,7 +18,7 @@ const style = computed(() => {
 
 <template>
   <div class="slidev-layout cover" :style="style">
-    <div class="my-auto w-full max-w-4xl">
+    <div class="my-auto w-full max-w-4xl text-gray-400 dark:text-gray-400">
       <slot />
     </div>
   </div>

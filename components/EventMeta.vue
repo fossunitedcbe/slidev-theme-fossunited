@@ -8,7 +8,7 @@ defineProps<{
 
 <template>
   <div
-    class="flex flex-wrap gap-x-8 gap-y-2 mt-8 text-sm font-medium uppercase tracking-wider text-gray-500 dark:text-gray-400"
+    class="flex flex-wrap gap-x-8 gap-y-2 mt-8 text-sm font-medium uppercase tracking-wider text-gray-600 dark:text-gray-200"
   >
     <div v-if="event" class="flex items-center gap-2">
       <div class="i-carbon:events text-green-500" />

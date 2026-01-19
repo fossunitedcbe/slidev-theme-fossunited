@@ -10,7 +10,7 @@ drawings:
 transition: slide-left
 title: FOSS United Theme
 layout: cover
-background: https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=2070
+# background: https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=2070
 ---
 
 # FOSS United Theme
@@ -119,7 +119,7 @@ Always verify your live demos before the talk!
 layout: default
 ---
 
-# whoami
+# $whoami
 
 <Speaker 
   name="Name" 
@@ -128,6 +128,7 @@ layout: default
   github="fossunited"
   website="https://fossunited.org"
 />
+<br/>
 
 ---
 layout: two-cols
@@ -142,6 +143,26 @@ layout: two-cols
 <br/>
 <img src="https://raw.githubusercontent.com/fossunited/Branding/refs/heads/main/asset/FOSS%20United%20Logo/FOSS%20United%20Logo%20White.png" class="border-8 border-green-500 bg-black" />
 
+
+---
+layout: section
+---
+# QR Code Examples
+
+
+
+---
+layout: default
+---
+
+<br/>
+
+<QRCode value="https://fossunited.org" position="top-left" size="150" />
+<QRCode value="https://fossunited.org" position="top-right" size="150" />
+<QRCode value="https://fossunited.org" position="center" size="300" />
+<QRCode value="https://fossunited.org" position="bottom-left" size="150" />
+<QRCode value="https://fossunited.org" position="bottom-right" size="150" />
+
 ---
 layout: center
 class: text-center
@@ -151,4 +172,4 @@ class: text-center
 
 Join the community at [fossunited.org](https://fossunited.org) 
 
-[Forum](https://forum.fossunited.org)
+<QRCode value="https://fossunited.org" position="center" size="250" />
