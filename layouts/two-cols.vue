@@ -8,3 +8,11 @@
     </div>
   </div>
 </template>
+
+<style>
+.slidev-layout.two-cols {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 3rem !important;
+}
+</style>
