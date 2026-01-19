@@ -1,50 +1,91 @@
 # slidev-theme-fossunited
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-fossunited?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-fossunited)
+A professional and clean [Slidev](https://github.com/slidevjs/slidev) theme designed for the [FOSS United](https://fossunited.org) community. This theme provides a set of layout patterns and components tailored for technology presentations and meetups.
 
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
+## Features
 
-<!--
-  Learn more about how to write a theme:
-  https://sli.dev/guide/write-theme.html
---->
+- 🌿 **FOSS United Branding**: Built-in logos and curated color palette.
+- 📱 **QR Code Component**: Easily render QR codes for links and social profiles.
+- 👤 **Speaker Profiles**: Beautifully styled speaker cards.
+- 💡 **Custom Callouts**: Visual highlights for tips, warnings, and notes.
+- 📊 **Flexible Layouts**: Optimized for various content types from cover slides to code-heavy segments.
 
-<!--
-  run `npm run dev` to check out the slides for more details of how to start writing a theme
--->
-
-<!--
-  Put some screenshots here to demonstrate your theme
-
-  Live demo: [...]
--->
+---
 
 ## Install
 
-Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
+Add the following to your `slides.md` frontmatter:
 
-<pre><code>---
-theme: <b>fossunited</b>
----</code></pre>
-
-Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
+```yaml
+---
+theme: fossunited
+---
+```
 
 ## Layouts
 
-This theme provides the following layouts:
+### `cover`
+The starting slide for your presentation.
+- **Props**:
+  - `logo`: Custom logo path (defaults to FOSS United logos).
+  - `background`: Background image URL.
 
-> TODO:
+### `section`
+A divider slide to start a new section.
+- Optimized for large headers and brief descriptions.
+
+### `quote`
+For sharing impactful quotes.
+- Automatically styles `blockquote` elements.
+- Use `<p class="attribution">Name</p>` for the quote author.
+
+### `two-cols`
+Side-by-side content layout.
+- Use `::right::` to separate content between columns.
+
+### `code`
+A layout designed to give maximum space for code snippets.
+
+### `intro`
+A simple introduction layout for secondary headings.
+
+---
 
 ## Components
 
-This theme provides the following components:
+### `<QRCode />`
+Renders a QR code that can be positioned absolutely on the slide.
+- **Props**:
+  - `value`: The text or URL to encode.
+  - `size`: Size of the QR code (default: 300).
+  - `position`: `top-left`, `top-right`, `bottom-left`, `bottom-right`, `center`.
+  - `additionalClasses`: Custom CSS classes for the container.
 
-> TODO:
+### `<Speaker />`
+A card for presenting speaker information.
+- **Props**:
+  - `name`: Speaker's name.
+  - `role`: (Optional) Professional title or community role.
+  - `avatar`: (Optional) Path to speaker's photo.
+  - `twitter`, `github`, `website`: (Optional) Social handles or links.
 
-## Contributing
+### `<EventMeta />`
+Displays key event details with icons.
+- **Props**:
+  - `event`: Event name.
+  - `city`: Location.
+  - `date`: Date of the event.
 
-- `npm install`
-- `npm run dev` to start theme preview of `example.md`
-- Edit the `example.md` and style to see the changes
-- `npm run export` to generate the preview PDF
-- `npm run screenshot` to generate the preview PNG
+### `<Callout />`
+Visual blocks for highlighting information.
+- **Props**:
+  - `type`: `tip`, `warning`, `note`.
+
+---
+
+## Development
+
+- `pnpm install`
+- `pnpm dev` to start theme preview of `example.md`
+- `pnpm build` to build the example project
+- `pnpm export` to generate a PDF of the slides

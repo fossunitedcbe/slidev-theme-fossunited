@@ -9,7 +9,7 @@ const props = defineProps<{
 const style = computed(() => {
   if (props.background) {
     return {
-      backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(${props.background})`,
+      backgroundImage: `url(${props.background})`,
       backgroundSize: "cover",
     };
   }
@@ -30,7 +30,6 @@ const style = computed(() => {
       <slot />
     </div>
   </div>
-  <img src="../assets/logos/coimbatore-square.svg" class="absolute bottom-[-1.5px] left-136 w-110 h-110" alt="Coimbatore FOSS United">
 </template>
 
 <style scoped>
