@@ -10,7 +10,7 @@ drawings:
 transition: slide-left
 title: FOSS United Theme
 layout: cover
-# background: https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&q=80&w=2070
+logo: /assets/logos/coimbatore.svg
 ---
 
 # FOSS United Theme
@@ -52,6 +52,8 @@ Demonstrating the available slide layouts
 ---
 layout: quote
 ---
+
+# Quote
 
 > "Free software is a matter of liberty, not price. To understand the concept, you should think of 'free' as in 'free speech', not as in 'free beer'."
 
@@ -135,13 +137,14 @@ layout: two-cols
 ---
 
 ## Left Column
-- 2 column layout
+<img src="./assets/logos/logo-white.svg" class="border-8 border-green-500 bg-black" />
+
 
 ::right::
 
 ## Right Column
 <br/>
-<img src="https://raw.githubusercontent.com/fossunited/Branding/refs/heads/main/asset/FOSS%20United%20Logo/FOSS%20United%20Logo%20White.png" class="border-8 border-green-500 bg-black" />
+<img src="./assets/logos/coimbatore-full.svg" class="border-8 border-green-500 bg-black" />
 
 
 ---
