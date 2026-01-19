@@ -28,7 +28,13 @@ theme: fossunited
 The starting slide for your presentation.
 - **Props**:
   - `logo`: Custom logo path (defaults to FOSS United logos).
-  - `background`: Background image URL.
+  - `background`: Background image URL. Rendered "blindly" without any overlays or filters.
+
+> [!TIP]
+> You can add custom graphics (like event-specific logos) by using absolute positioning directly in the slide content:
+> ```html
+> <img src="/assets/logos/custom-logo.svg" class="absolute bottom-4 right-4 w-24" />
+> ```
 
 ### `section`
 A divider slide to start a new section.

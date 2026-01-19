@@ -29,6 +29,8 @@ Growing India's FOSS Ecosystem
   </span>
 </div>
 
+<img src="/assets/logos/coimbatore-square.svg" class="absolute bottom-[-1.5px] left-136 w-110 h-110" alt="Coimbatore FOSS United">
+
 ---
 layout: default
 ---
@@ -146,25 +148,21 @@ layout: two-cols
 <br/>
 <img src="./assets/logos/coimbatore-full.svg" class="border-8 border-green-500 bg-black" />
 
-
----
-layout: section
----
-# QR Code Examples
-
-
-
 ---
 layout: default
 ---
+# QR Code
 
+```vue
+<QRCode
+value="https://fossunited.org"
+position="center"
+size="200" />
+
+```
 <br/>
 
-<QRCode value="https://fossunited.org" position="top-left" size="150" />
-<QRCode value="https://fossunited.org" position="top-right" size="150" />
-<QRCode value="https://fossunited.org" position="center" size="300" />
-<QRCode value="https://fossunited.org" position="bottom-left" size="150" />
-<QRCode value="https://fossunited.org" position="bottom-right" size="150" />
+<QRCode value="https://fossunited.org" position="center" size="200" />
 
 ---
 layout: center

@@ -28,7 +28,7 @@
     "defaults": {
       "fonts": {
         "sans": "Inter",
-        "mono": "Fira Code"
+        "mono": "JetBrains Mono"
       }
     }
   },
